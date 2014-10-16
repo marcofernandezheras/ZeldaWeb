@@ -2,10 +2,47 @@
     box-sizing: border-box;
 }
 
-#footer{
+body{
+    background-image: url('../img/fondo.png');
+    margin: 0;
+    padding: 0;
+}
+
+#nav, #footer{
     width: 100%;
     clear: both;
 }
+
+#footer{
+    overflow: auto;
+    border-top: 1px solid;
+}
+
+#nav ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav a, #nav a:link, #nav a:visited{
+    float: left;
+    width: 14.28%;
+    text-align: center;
+    padding: 1.2em;
+    text-decoration: none;
+    background: linear-gradient(black,#534F00,black);
+    color: white;
+    margin-bottom: 1.5em;
+}
+
+#nav a:hover {
+    background: linear-gradient(grey,rgba(26, 25, 2, 1),black);
+}
+
+#nav a:active {
+    background: linear-gradient(rgba(26, 25, 2, 1),black,rgba(26, 25, 2, 1));
+}
+
 
 #footer div{
     float: left;
@@ -17,4 +54,13 @@
 img.responsive {
     width: 100%;
     height: auto;
+}
+
+.content{
+    padding: 0.5em;
+    margin: 1em;
+    border-width: 1em;
+    border-style: solid;
+    border-image:url("../img/content_border.png") 30 30 round;
+    background: url("../img/content_bg.png");
 }
