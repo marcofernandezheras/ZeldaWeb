@@ -55,6 +55,8 @@ body{
 
 .menu{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 #footer div{
@@ -69,7 +71,7 @@ img.responsive {
     height: auto;
 }
 
-.content, .game{
+.content, .content>ul>li{
     padding: 0.5em;
     margin: 1em;
     border-width: 1em;
@@ -78,7 +80,7 @@ img.responsive {
     background: url("../img/content_bg.png");
 }
 
-.game ol, .game ul{
+.content ol, .content ul{
     list-style: none;
 }
 
