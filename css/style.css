@@ -78,10 +78,20 @@ img.responsive {
     border-style: solid;
     border-image:url("../img/content_border.png") 30 30 round;
     background: url("../img/content_bg.png");
+    overflow: auto;
 }
 
 .content ol, .content ul{
     list-style: none;
+}
+
+.content li img{
+    float: left;
+    margin-right: 15px;
+}
+
+.content ol>li:first-child{
+    clear: both;
 }
 
 .formLabel{
