@@ -78,6 +78,10 @@ img.responsive {
     background: url("../img/content_bg.png");
 }
 
+.game ol, .game ul{
+    list-style: none;
+}
+
 .formLabel{
     width: 500px;
 }
