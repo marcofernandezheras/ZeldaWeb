@@ -85,7 +85,7 @@ img.responsive {
     list-style: none;
 }
 
-.content li img{
+.push-left, .content li img{
     float: left;
     margin-right: 15px;
 }
