@@ -97,3 +97,15 @@ img.responsive {
 .formLabel{
     width: 500px;
 }
+
+caption{
+    background-color: rgba(165, 124, 42, 1);
+}
+table, th, td{
+    border-collapse: collapse;
+    border: 1px solid rgba(165, 124, 42, 1);
+}
+
+th, .columnaTipo{
+    background-color: rgba(115, 124, 42, 1);
+}
