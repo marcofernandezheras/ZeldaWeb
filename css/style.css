@@ -79,6 +79,7 @@ img.responsive {
     border-image:url("../img/content_border.png") 30 30 round;
     background: url("../img/content_bg.png");
     overflow: auto;
+    clear: left;
 }
 
 .content ol, .content ul{
@@ -96,6 +97,11 @@ img.responsive {
 
 .formLabel{
     width: 500px;
+}
+
+.col-desk-50{
+    width: 50%;
+    float: left;
 }
 
 caption{
