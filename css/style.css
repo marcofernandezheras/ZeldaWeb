@@ -99,13 +99,9 @@ img.responsive {
     width: 500px;
 }
 
-.col-desk-50{
-    width: 50%;
-    float: left;
-}
-
 caption{
     background-color: rgba(165, 124, 42, 1);
+    width: 100%;
 }
 table, th, td{
     border-collapse: collapse;
@@ -116,20 +112,35 @@ th, .columnaTipo{
     background-color: rgba(115, 124, 42, 1);
 }
 
+.row-tipo-consola{
+    background-color: darkgreen;
+}
+
+.row-consola{
+    background-color: darkred;
+}
+
 
 /* Media Querys*/
+@media only screen  and (max-device-width : 1024px){
 
-@media only screen and (max-device-width : 480px) {
-    .push-left, .content li img{
-        width: 100%;
-        clear: both;
-    }
     .content ol, .content ul{
         padding: 0;
     }
     .content, .content > ul > li {
         margin: 0;
     }
+}
+
+@media only screen and (max-device-width : 480px) {
+    .col-sm-100{
+        width: 100%
+    }
+    .sm-hidden,.lg-only{
+        display: none;
+    }
+    
+
     #nav a, #nav a:link, #nav a:visited{
         float: left;
         width: 100%;
@@ -142,13 +153,67 @@ th, .columnaTipo{
         padding: 1px;
         text-align: center;
     }
+
+    iframe{ 
+        width:100%;
+    }
+}
+
+@media only screen and (max-device-width : 768px) {
+    .menu a, .menu a:link, .menu a:visited{
+        width: 100%;
+    }
+    .push-left, .content li img{
+        width: 100%;
+        clear: both;
+    }
+    .col-sm-100{
+        width: 100%
+    }
+    textarea,input[type=text]{
+        width: 100%;
+    }
+    iframe{ 
+        width:100%;
+    }
 }
 
 @media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
+
+    .sm-hidden, .lg-only{
+        display: none;
+    }
+
+    .sm-only{
+        display: initial;
+    }
+
     #nav a, #nav a:link, #nav a:visited{
         float: left;
         width: 50%;
         padding: 0.8em;
         margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-device-width : 760px) {
+    .lg-only{
+        display: initial;
+    }
+    .sm-only{
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width : 1024px) {
+    .lg-only{
+        display: initial;
+    }
+    .sm-only{
+        display: none;
+    }
+    .col-desk-50{
+        width: 50%;
+        float: left;
     }
 }
